@@ -1,0 +1,3 @@
+2018-03-30, revision 4964:
+- New versionAlterFRN-server : 
+- fixed a bug when forming a differential (differential) list of clients; 

@@ -1,0 +1,9 @@
+2018-09-14, revision 5208:
+- New versionAlterFRN-server : 
+- Improved handling of multiple responses from multipleFRN System Manager in mode Light(s.1.10.3) and modeFRN(s.1.10.4) ; 
+- Added the ability to limit the duration of the client connection, as for the entire server : server parameterClientSessionMaxTime(s.1.16) , and for a particular network (room): network / room optionClientSessionMaxTime(s.4.15) ; 
+- Added parameterManagerInvalidPasswordScript(s.1.17) to specify the name of an external program (script) that will be asynchronously started when received fromFRN System Manager errors "Invalid password", which makes it possible to automatically request a new static password with the command register(0.4.12) forAlterFRN-customer; 
+- Added commandssetmanpassidx(s.0.9) andsetmanpassaddr(s.0.10) to set a new password for connecting the server toFRN System Manager; 
+- Added optionHidden(s.4.16) for a network (room), which allows to exclude such a network (room) from the list of networks (rooms) - the opportunity to create invisible networks (rooms) has appeared; 
+- Added parameterLogExec(s.3.4) in section [System] (s.3) to enable logging of the start of external programs (scripts); 
+- Added the ability to have more than one owner for the network (room); see also network option (rooms)OwnerEMail(s.4.1) ; 
